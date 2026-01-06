@@ -143,10 +143,9 @@
 
 // export default Contact;
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { FaPhoneAlt, FaWhatsapp, FaEnvelope } from "react-icons/fa";
-// import emailjs from "@emailjs/browser";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -156,6 +155,7 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const form = useRef();
 
   const handleChange = (e) => {
     setFormData({
@@ -169,15 +169,11 @@ const Contact = () => {
     setLoading(true);
 
     emailjs
-      .send(
+      .sendForm(
         "service_hxibvxq",
-        "template_yd2ty7i",
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          message: formData.message,
-        },
-        "template_59vnvir"
+        "template_59vnvir",
+        form.current,
+        "J8Fnx2Nd0u2t4D2ne"
       )
       .then(
         () => {
@@ -205,7 +201,7 @@ const Contact = () => {
             Send me a message
           </h2>
 
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form onSubmit={handleSubmit} ref={form} className="space-y-4">
             <input
               type="text"
               name="name"
