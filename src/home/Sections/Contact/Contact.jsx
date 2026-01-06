@@ -177,7 +177,7 @@ const Contact = () => {
           from_email: formData.email,
           message: formData.message,
         },
-        "J8Fnx2Nd0u2t4D2ne"
+        "template_59vnvir"
       )
       .then(
         () => {
