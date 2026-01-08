@@ -24,6 +24,7 @@ const AboutMe = () => {
 
       <p className="mt-4 text-gray-200 text-sm md:text-base max-w-xl">
         MERN Stack Developer from <span className="font-semibold">INDIA</span>
+        <span className="font-semibold india-loading">INDIA</span>
       </p>
 
       <div className="flex gap-5 mt-6">
