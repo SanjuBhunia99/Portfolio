@@ -11,7 +11,7 @@ const AboutMe = () => {
       <img
         src={ProfileImg}
         alt="Profile"
-        className="w-40 h-40 md:w-80 md:h-80 rounded-full object-fit cover object-position top border-2 border-white mb-6"
+        className="w-35 h-35 md:w-80 md:h-80 rounded-full object-fit cover object-position top border-2 border-white mb-6"
       />
       <h1 className="text-2xl md:text-4xl font-semibold text-white">
         <span className="text-blue-400">
