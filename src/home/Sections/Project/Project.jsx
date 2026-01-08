@@ -81,13 +81,8 @@ const Project = () => {
               transition={{ duration: 0.6, delay: i * 0.15 }}
               viewport={{ once: true }}
               className="
-                group relative rounded-xl overflow-hidden
-                bg-black/20 backdrop-blur-md
-                border border-black/10
-                hover:shadow-[0_0_22px_rgba(168,85,247,0.45)]
-                hover:-translate-y-2
-                transition-all duration-300
-              "
+                group relative rounded-xl overflow-hidden bg-black/20 backdrop-blur-md border border-black/10 hover:shadow-[0_0_22px_rgba(168,85,247,0.45)] hover:-translate-y-2 transition-all duration-300
+              cursor-pointer"
             >
               <img
                 src={p.image}
@@ -115,7 +110,7 @@ const Project = () => {
                     // href="book-store-two-rust.vercel.app"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2 text-sm rounded-md bg-purple-600 hover:bg-purple-700 text-white transition"
+                    className="px-4 py-2 text-sm rounded-md bg-purple-600 hover:bg-purple-700 text-white transition cursor-pointer"
                   >
                     Live Demo
                   </a>
@@ -124,7 +119,7 @@ const Project = () => {
                     href={p.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2 text-sm rounded-md border border-purple-400 text-purple-300 hover:bg-purple-500/20 transition"
+                    className="px-4 py-2 text-sm rounded-md border border-purple-400 text-purple-300 hover:bg-purple-500/20 transition cursor-pointer"
                   >
                     GitHub
                   </a>
