@@ -23,7 +23,7 @@ const AboutMe = () => {
       </h1>
 
       <p className="mt-4 text-gray-200 text-sm md:text-base max-w-xl">
-        Software Engineer <span className="font-semibold">India</span>
+        Software Engineer from <span className="font-semibold">India</span>
       </p>
 
       <div className="flex gap-5 mt-6">
