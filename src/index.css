@@ -81,6 +81,28 @@ body {
   }
 }
 
+.india-loading {
+  position: relative;
+  color: transparent;
+  background: linear-gradient(90deg,
+      #9ca3af,
+      #60a5fa,
+      #9ca3af);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: indiaShimmer 1.8s infinite linear;
+}
+
+@keyframes indiaShimmer {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
 /* :root{
   background-color: #370942e7;
 } */
