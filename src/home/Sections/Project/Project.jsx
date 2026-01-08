@@ -82,7 +82,7 @@ const Project = () => {
               viewport={{ once: true }}
               className="
                 group relative rounded-xl overflow-hidden bg-black/20 backdrop-blur-md border border-black/10 hover:shadow-[0_0_22px_rgba(168,85,247,0.45)] hover:-translate-y-2 transition-all duration-300
-              cursor-pointer"
+              "
             >
               <img
                 src={p.image}

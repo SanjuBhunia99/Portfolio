@@ -23,7 +23,7 @@ const AboutMe = () => {
       </h1>
 
       <p className="mt-4 text-gray-200 text-sm md:text-base max-w-xl">
-        MERN Stack Developer from <span className="font-semibold"></span>
+        MERN Stack Developer <span className="font-semibold"></span>
       </p>
 
       <div className="flex gap-5 mt-6">
