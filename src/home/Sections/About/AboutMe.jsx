@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
-import ProfileImg from "../../../assets/images/image/Sanju-Bhunia-4.jpg";
+import ProfileImg from "../../../assets/images/image/Sanju-Bhunia-5.jpg";
 const AboutMe = () => {
   return (
     <section
@@ -11,7 +11,7 @@ const AboutMe = () => {
       <img
         src={ProfileImg}
         alt="Profile"
-        className="w-30 h-30 md:w-80 md:h-80 rounded-full object-fit cover object-position top border-2 border-white mb-6"
+        className="w-35 h-35 md:w-80 md:h-80 rounded-full object-fit cover object-position top border-2 border-white mb-6"
       />
       <h1 className="text-2xl md:text-4xl font-semibold text-white">
         <span className="text-blue-400">
