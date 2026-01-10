@@ -118,53 +118,53 @@ const Skills = () => {
     >
       <div className="text-xl sm:text-2xl underline font-semibold mb-6 ">
         🛠️ Skills
-        <div className="flex justify-center text-white gap-6 mb-12 flex-wrap p-4">
-          {filterBtn("all", "All", "⚡")}
-          {filterBtn("web", "Web Development", "💻")}
-          {filterBtn("design", "Web Design", "🎨")}
-          {filterBtn("database", "Database", "🗄️")}
-          {filterBtn("tools", "Tools", "🛠️")}
-        </div>
+      </div>
+      <div className="flex justify-center text-white gap-6 mb-12 flex-wrap p-4">
+        {filterBtn("all", "All", "⚡")}
+        {filterBtn("web", "Web Development", "💻")}
+        {filterBtn("design", "Web Design", "🎨")}
+        {filterBtn("database", "Database", "🗄️")}
+        {filterBtn("tools", "Tools", "🛠️")}
+      </div>
+      <div
+        className="max-w-3xl mx-auto max-h-82.5 overflow-y-auto pr-2"
+        style={{
+          scrollbarWidth: "none",
+          msOverflowStyle: "none",
+        }}
+      >
         <div
-          className="max-w-3xl mx-auto max-h-82.5 overflow-y-auto pr-2"
-          style={{
-            scrollbarWidth: "none",
-            msOverflowStyle: "none",
-          }}
-        >
-          <div
-            className={`grid gap-4 sm:gap-6
+          className={`grid gap-4 sm:gap-6
             ${
               active === "all"
                 ? "grid-cols-1 md:grid-cols-2"
                 : "grid-cols-1 md:grid-cols-2"
             }`}
-          >
-            {filteredSkills.map((skill, index) => {
-              const Icon = skill.icon;
-              return (
-                <div
-                  key={index}
-                  className="flex items-center gap-4 border border-gray-300 rounded-lg px-6 py-4
+        >
+          {filteredSkills.map((skill, index) => {
+            const Icon = skill.icon;
+            return (
+              <div
+                key={index}
+                className="flex items-center gap-4 border border-gray-300 rounded-lg px-6 py-4
                             hover:-translate-y-1
                           hover:shadow-[0_0_18px_rgba(255,255,255,0.18)]
                            transition duration-300"
-                >
-                  <Icon className={`text-2xl ${skill.color}`} />
-                  <span className="text-base font-medium">{skill.name}</span>
-                </div>
-              );
-            })}
-          </div>
+              >
+                <Icon className={`text-2xl ${skill.color}`} />
+                <span className="text-base font-medium">{skill.name}</span>
+              </div>
+            );
+          })}
         </div>
-        <style>
-          {`
+      </div>
+      <style>
+        {`
           ::-webkit-scrollbar {
             display: none;
           }
         `}
-        </style>
-      </div>{" "}
+      </style>
     </section>
   );
 };
