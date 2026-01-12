@@ -1,5 +1,7 @@
 @import "tailwindcss";
 @plugin "daisyui";
+@import "mouse-follower/dist/mouse-follower.min.css";
+
 
 body {
   margin: auto;

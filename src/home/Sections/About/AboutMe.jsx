@@ -9,6 +9,7 @@ const AboutMe = () => {
       className="scroll-mt-24 mt-16 flex flex-col items-center text-center px-2"
     >
       <img
+        data-cursor="-inverse"
         src={ProfileImg}
         alt="Profile"
         className="w-35 h-35 md:w-80 md:h-80 rounded-full object-fit cover object-position top border-2 border-white mb-6"

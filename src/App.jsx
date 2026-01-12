@@ -8,10 +8,10 @@ import PointerFollower from "./components/PointerFollow";
 const App = () => {
   return (
     <>
+      <PointerFollower />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/footer" element={<Footer />} />
-        <Route path="/PointerFollow" element={<PointerFollower />} />
       </Routes>
     </>
   );
