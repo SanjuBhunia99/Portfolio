@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import cert1 from "../../../assets/images/certificate/Certificate.webp";
 import cert2 from "../../../assets/images/certificate/img19-5.jpg";
+import cert10 from "../../../assets/images/certificate/img23.jpg";
 import cert3 from "../../../assets/images/certificate/img19-2.jpg";
 import cert4 from "../../../assets/images/certificate/img19-1.jpg";
 import cert5 from "../../../assets/images/certificate/img19-4.jpg";
@@ -8,7 +9,6 @@ import cert6 from "../../../assets/images/certificate/img19.jpg";
 import cert7 from "../../../assets/images/certificate/img20.jpg";
 import cert8 from "../../../assets/images/certificate/img21.jpg";
 import cert9 from "../../../assets/images/certificate/img22.jpg";
-import cert10 from "../../../assets/images/certificate/img23.jpg";
 
 const Page = ({ image }) => {
   return (
@@ -29,6 +29,7 @@ const Page = ({ image }) => {
 const certificates = [
   cert1,
   cert2,
+  cert10,
   cert3,
   cert4,
   cert5,
@@ -36,7 +37,6 @@ const certificates = [
   cert7,
   cert8,
   cert9,
-  cert10,
 ];
 
 const Certificate = () => {
