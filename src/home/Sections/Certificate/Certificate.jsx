@@ -9,7 +9,7 @@ import cert6 from "../../../assets/images/certificate/img19.jpg";
 import cert7 from "../../../assets/images/certificate/img20.jpg";
 import cert8 from "../../../assets/images/certificate/img21.jpg";
 import cert9 from "../../../assets/images/certificate/img22.jpg";
-
+import cert11 from "../../../assets/images/certificate/img24.jpg";
 const Page = ({ image }) => {
   return (
     <div className="relative transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02]">
@@ -37,6 +37,7 @@ const certificates = [
   cert7,
   cert8,
   cert9,
+  cert11,
 ];
 
 const Certificate = () => {
