@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion"; // eslint-disable-line no-unused-vars
 import bookStore from "../../../assets/images/project/Book Store.jpg";
+import proTask from "../../../assets/images/project/ProTask.jpg";
 // import chatApp from "../../../accests/images/project/chat.jpg";
 // import ecommerce from "../../../accests/images/project/ecommerce.jpg";
 // import calculator from "../../../accests/images/project/calculator.jpg";
@@ -15,6 +16,14 @@ const projects = [
     image: bookStore,
     live: "https://book-store-two-rust.vercel.app",
     github: "https://github.com/SanjuBhunia99/Book-Store.git",
+  },
+  {
+    title: "ProTask",
+    desc: "MERN stack book store with admin dashboard.",
+    tech: ["MongoDB", "Express", "React", "Node"],
+    image: proTask,
+    live: "https://protask-nine.vercel.app/",
+    github: "https://github.com/SanjuBhunia99/ProTask.git",
   },
   {
     title: "Chat Application",
