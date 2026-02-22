@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion"; // eslint-disable-line no-unused-vars
+import { motion } from "framer-motion"; 
 import bookStore from "../../../assets/images/project/Book Store.jpg";
 import proTask from "../../../assets/images/project/ProTask.jpg";
 // import chatApp from "../../../accests/images/project/chat.jpg";
@@ -19,7 +19,7 @@ const projects = [
   },
   {
     title: "ProTask",
-    desc: "MERN stack book store with admin dashboard.",
+    desc: "MERN stack ProTask with Todo App.",
     tech: ["MongoDB", "Express", "React", "Node"],
     image: proTask,
     live: "https://protask-nine.vercel.app/",
