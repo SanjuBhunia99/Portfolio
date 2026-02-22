@@ -30,6 +30,7 @@ const certificates = [
   cert1,
   cert2,
   cert10,
+  cert11,
   cert3,
   cert4,
   cert5,
@@ -37,7 +38,7 @@ const certificates = [
   cert7,
   cert8,
   cert9,
-  cert11,
+  
 ];
 
 const Certificate = () => {
