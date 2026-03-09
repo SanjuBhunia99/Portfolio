@@ -1,12 +1,15 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 import bookStore from "../../../assets/images/project/Book Store.jpg";
+import ecommerce from "../../../assets/images/project/Cartify.png";
 import proTask from "../../../assets/images/project/ProTask.jpg";
-// import chatApp from "../../../accests/images/project/chat.jpg";
-// import ecommerce from "../../../accests/images/project/ecommerce.jpg";
-// import calculator from "../../../accests/images/project/calculator.jpg";
-// import clock from "../../../accests/images/project/clock.jpg";
-// import stopwatch from "../../../accests/images/project/stopwatch.jpg";
+import clock from "../../../assets/images/project/Clock.png";
+import loginsignup from "../../../assets/images/project/LoginSignup.png";
+import stopwatch from "../../../assets/images/project/Watch.png";
+
+// import chatApp from "../../../assets/images/project/chat.jpg";
+// import calculator from "../../../assets/images/project/calculator.jpg";
+
 
 const projects = [
   {
@@ -18,6 +21,14 @@ const projects = [
     github: "https://github.com/SanjuBhunia99/Book-Store.git",
   },
   {
+    title: "Cartify",
+    desc: "E-commerce platform frontend.",
+    tech: ["JavaScript", "React", "HTML5", "CSS3"],
+    image: ecommerce,
+    live: "https://soft-cranachan-7d8331.netlify.app/",
+    github: "https://github.com/SanjuBhunia99/E-Commerce",
+  },
+  {
     title: "ProTask",
     desc: "MERN stack ProTask with Todo App.",
     tech: ["MongoDB", "Express", "React", "Node"],
@@ -26,43 +37,45 @@ const projects = [
     github: "https://github.com/SanjuBhunia99/ProTask.git",
   },
   {
-    title: "Chat Application",
-    desc: "Real-time chat app using Socket.io.",
-    tech: ["React", "Node", "Socket.io", "MongoDB", "Express"],
-    image: "ecommerce",
-    live: "#",
-    github: "https://github.com/SanjuBhunia99/Chatting-Application",
-  },
-  {
-    title: "E-commerce",
-    desc: "E-commerce platform frontend.",
-    tech: ["JavaScript", "React", "Tailwind"],
-    image: "chatApp",
-    live: "#",
-    github: "https://github.com/SanjuBhunia99/E-Commerce-Platfrom",
-  },
-  {
-    title: "Calculator",
-    desc: "Calculator using HTML, CSS and JavaScript.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    image: "calculator",
-    live: "#",
-    github: "https://github.com/SanjuBhunia99/Calculator",
-  },
-  {
     title: "Analog Clock",
     desc: "Analog clock built using JavaScript.",
     tech: ["HTML", "CSS", "JavaScript"],
-    // image: clock,
+    image: clock,
     live: "https://694fe8a894af8a00088e2c43--elegant-shortbread-d7f95d.netlify.app/",
     github: "https://github.com/SanjuBhunia99/Analog-clock",
+  },
+  // {
+  //   title: "Chat Application",
+  //   desc: "Real-time chat app using Socket.io.",
+  //   tech: ["React", "Node", "Socket.io", "MongoDB", "Express"],
+  //   image: "chatapplication",
+  //   live: "#",
+  //   github: "https://github.com/SanjuBhunia99/Chatting-Application",
+  // },
+
+  // {
+  //   title: "Calculator",
+  //   desc: "Calculator using HTML, CSS and JavaScript.",
+  //   tech: ["HTML", "CSS", "JavaScript"],
+  //   image: "calculator",
+  //   live: "#",
+  //   github: "https://github.com/SanjuBhunia99/Calculator",
+  // },
+
+  {
+    title: "Login-Signup Page",
+    desc: "Login and SignUp built using JavaScript.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    image: loginsignup,
+    live: "https://jovial-flan-df896a.netlify.app/",
+    github: "https://github.com/SanjuBhunia99/Login_SignUp",
   },
   {
     title: "StopWatch",
     desc: "Stopwatch application using JavaScript.",
     tech: ["HTML", "CSS", "JavaScript"],
-    // image: stopwatch,
-    live: "https://694f26f1329c8e28066fbe5a--stop-watchn.netlify.app/",
+    image: stopwatch,
+    live: "https://stop-watchn.netlify.app/",
     github: "https://github.com/SanjuBhunia99/StopWatch",
   },
 ];
