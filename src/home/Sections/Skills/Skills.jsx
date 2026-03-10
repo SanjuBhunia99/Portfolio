@@ -14,13 +14,19 @@ import { VscVscode } from "react-icons/vsc";
 import { DiEclipse } from "react-icons/di";
 import { FaBootstrap, FaDatabase, FaCss3Alt } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { FaJava } from "react-icons/fa6";
-
+import { FaJava , FaPython} from "react-icons/fa6";
+import { FaGitAlt, FaGithub } from "react-icons/fa";
 const skillsData = [
   {
     name: "Java",
     icon: FaJava,
     color: "text-yellow-400",
+    category: "",
+  },
+  {
+    name: "Python",
+    icon: FaPython,
+    color: "text-blue-500",
     category: "",
   },
   {
@@ -76,6 +82,18 @@ const skillsData = [
     icon: SiMongodb,
     color: "text-green-400",
     category: "database",
+  },
+  {
+    name: "Git",
+    icon: FaGitAlt,
+    color: "text-orange-600",
+    category: "",
+  },
+  {
+    name: "GitHub",
+    icon: FaGithub,
+    color: "text-white-400",
+    category: "",
   },
   {
     name: "SQL",
