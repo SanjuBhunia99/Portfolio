@@ -2,10 +2,11 @@ import React from "react";
 import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 
+
 const Footer = () => {
   return (
-    <footer className="relative pt-3 bg-linear-to-tr from-[#280b31ea] via-[#3a1850e0] to-[#4e1e5be0] text-white mt-10 shadow-2xl">
-      <div className="container mx-auto px-4 pb-8 pt-16 flex flex-col md:flex-row md:justify-between items-center gap-8">
+    <footer className="relative pt-3 bg-linear-to-tr from-[#280b31ea] via-[#3a1850e0] to-[#4e1e5be0] text-white mt-8 shadow-2xl">
+      <div className="container mx-auto px-4 pb-6 pt-8 flex flex-col md:flex-row md:justify-between items-center gap-8">
         <div className="flex flex-col items-center md:items-start gap-2">
           <span className="text-lg font-semibold tracking-wide">
             Made with 🧡 and React
@@ -14,10 +15,18 @@ const Footer = () => {
             © {new Date().getFullYear()} Sanju Bhunia
           </span>
         </div>
+        <div>
+          <img
+            src="/Portfolio/UI-Developer.gif"
+            alt="gif"
+            className="w-16 md:w-32 lg:w-44 mx-auto rounded-xl"
+          />
+        </div>
         <div className="flex flex-col items-center">
           <span className="text-base font-semibold mb-2 tracking-wide">
             Social Media
           </span>
+
           <div className="flex gap-4 mt-2">
             <a
               href="https://www.instagram.com/thesanju_bhunia99/"

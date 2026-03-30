@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Resume from "../../src/assets/images/resume/Resume.pdf";
 import Logo from "../../public/jpg.jpg";
-const notActiveClass =
-  "cursor-pointer text-gray-300 hover:text-white hover:bg-gray-700 rounded-md px-2 py-1 transition-all text-base";
+import { FaArrowUp } from "react-icons/fa";
 
 const scrollToSection = (id) => {
   const el = document.getElementById(id);
@@ -10,89 +9,164 @@ const scrollToSection = (id) => {
     el.scrollIntoView({ behavior: "smooth" });
   }
 };
-const NavItems = () => (
-  <>
-    <button onClick={() => scrollToSection("about")} className={notActiveClass}>
-      About
-    </button>
-    {/* <button
-       onClick={() => scrollToSection("experience")}
-       className={notActiveClass}
-     >
-       Experience
-     </button> */}
-    <button
-      onClick={() => scrollToSection("education")}
-      className={notActiveClass}
-    >
-      Education
-    </button>
-    <button
-      onClick={() => scrollToSection("project")}
-      className={notActiveClass}
-    >
-      Project
-    </button>
-    <button
-      onClick={() => scrollToSection("skills")}
-      className={notActiveClass}
-    >
-      Skills
-    </button>
-    <button
-      onClick={() => scrollToSection("certificate")}
-      className={notActiveClass}
-    >
-      Certificate
-    </button>
-    <button
-      onClick={() => scrollToSection("activity")}
-      className={notActiveClass}
-    >
-      Activity
-    </button>
-    <button
-      onClick={() => scrollToSection("contact")}
-      className={notActiveClass}
-    >
-      Contact
-    </button>
-    <a href={Resume} download className={`${notActiveClass} inline-block`}>
-      Resume
-    </a>
-  </>
-);
+
+
+const getClass = (active, section) =>
+  `cursor-pointer px-2 py-1 text-base rounded-md transition-all ${
+    active === section
+      ? "text-white underline underline-offset-4 decoration-2 decoration-white"
+      : "text-gray-300 hover:text-white hover:bg-gray-700"
+  }`;
+
+
+const NavItems = ({ active, setActive, setOpen }) => {
+  const handleClick = (section) => {
+    scrollToSection(section);
+    setActive(section);
+    if (setOpen) setOpen(false); 
+  };
+
+  return (
+    <>
+      <button
+        onClick={() => handleClick("about")}
+        className={getClass(active, "about")}
+      >
+        About
+      </button>
+
+      {/* <button
+        onClick={() => handleClick("experience")}
+        className={getClass(active, "experience")}
+      >
+        Experience
+      </button> */}
+
+      <button
+        onClick={() => handleClick("education")}
+        className={getClass(active, "education")}
+      >
+        Education
+      </button>
+
+      <button
+        onClick={() => handleClick("project")}
+        className={getClass(active, "project")}
+      >
+        Project
+      </button>
+
+      <button
+        onClick={() => handleClick("skills")}
+        className={getClass(active, "skills")}
+      >
+        Skills
+      </button>
+
+      <button
+        onClick={() => handleClick("certificate")}
+        className={getClass(active, "certificate")}
+      >
+        Certificate
+      </button>
+
+      <button
+        onClick={() => handleClick("activity")}
+        className={getClass(active, "activity")}
+      >
+        Activity
+      </button>
+
+      <button
+        onClick={() => handleClick("contact")}
+        className={getClass(active, "contact")}
+      >
+        Contact
+      </button>
+      <button>
+        <a
+          href={Resume}
+          download
+          className="px-2 py-1 text-gray-300 hover:text-white"
+        >
+          Resume
+        </a>
+      </button>
+    </>
+  );
+};
 
 const Navbar = () => {
+  const [active, setActive] = useState("about");
+  const [showTop, setShowTop] = useState(false);
+  const [open, setOpen] = useState(false); 
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowTop(window.scrollY > 300);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
-    <div className="navbar bg-[#1f0927e5] text-white shadow-sm sticky top-0 z-50 px-3">
-      <div className="navbar-start">
-        <img
-          src={Logo}
-          alt="Logo"
-          onClick={() => scrollToSection("about")}
-          className="h-12 w-12 rounded-full object-cover object-top cursor-pointer ml-14"
-        />
-      </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal gap-1">
-          <NavItems />
-        </ul>
-      </div>
-      <div className="navbar-end lg:hidden">
-        <div className="dropdown dropdown-end">
-          <label tabIndex={0} className="btn btn-ghost text-xl">
-            ☰
-          </label>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content bg-black text-white rounded-box mt-3 w-52 p-3 shadow"
-          >
-            <NavItems />
+    <>
+      <div className="navbar bg-[#110514cc] backdrop-blur-xl text-white sticky top-0 z-50 px-3">
+        <div className="navbar-start">
+          <img
+            src={Logo}
+            alt="Logo"
+            onClick={() => {
+              scrollToSection("about");
+              setActive("about");
+            }}
+            className="h-10 w-10 md:h-12 md:w-12 rounded-full object-cover object-top cursor-pointer ml-4 md:ml-14"
+          />
+        </div>
+
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal gap-2">
+            <NavItems active={active} setActive={setActive} />
           </ul>
         </div>
+
+        <div className="navbar-end lg:hidden relative">
+          <button
+            onClick={() => setOpen(!open)}
+            className="btn btn-ghost text-xl"
+          >
+            {open ? "✖" : "☰"}
+          </button>
+
+          {open && (
+            <div className="absolute right-3 top-14 w-52 bg-black text-white rounded-lg p-4 shadow-lg z-999">
+              <div className="flex flex-col gap-2">
+                <NavItems
+                  active={active}
+                  setActive={setActive}
+                  setOpen={setOpen}
+                />
+              </div>
+            </div>
+          )}
+        </div>
       </div>
-    </div>
+
+      {showTop && (
+        <button
+          onClick={scrollTop}
+          className="fixed bottom-25 md:bottom-30 right-6 z-50 bg-linear-to-tr from-purple-600 to-pink-500 text-white p-3 rounded-full shadow-lg hover:scale-110 hover:shadow-pink-400/50 transition-all duration-300 animate-bounce"
+        >
+          <FaArrowUp />
+        </button>
+      )}
+    </>
   );
 };
 

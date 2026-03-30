@@ -17,7 +17,7 @@ const AboutMe = () => {
       <h1 className="text-2xl md:text-4xl font-semibold text-white">
         <span className="text-blue-400">
           <span className="inline-block wave-hand">👋</span>
-          <span className="name-animation">Hello </span>
+          <span className="name-animation font-medium">Hello </span>
         </span>
         ___<span className="typing-dots"></span> I'm{" "}
         <span className="typing-fade-name">Sanju Bhunia</span>
