@@ -54,13 +54,40 @@ const projects = [
   //   github: "https://github.com/SanjuBhunia99/Chatting-Application",
   // },
 
+  // {
+  //   title: "Chat Application",
+  //   desc: "Real-time chat app using Socket.io.",
+  //   tech: ["React", "Node", "Socket.io", "MongoDB", "Express"],
+  //   image: "chatapplication",
+  //   live: "#",
+  //   github: "https://github.com/SanjuBhunia99/KodNest_Quiz_Platfrom.git",
+  // },
+
+  // {
+  //   title: "Chat Application",
+  //   desc: "Real-time chat app using Socket.io.",
+  //   tech: ["React", "Node", "Socket.io", "MongoDB", "Express"],
+  //   image: "chatapplication",
+  //   live: "#",
+  //   github: "https://github.com/SanjuBhunia99/Chatting-Application",
+  // },
+
+  // {
+  //   title: "Chat Application",
+  //   desc: "Real-time chat app using Socket.io.",
+  //   tech: ["React", "Node", "Socket.io", "MongoDB", "Express"],
+  //   image: "chatapplication",
+  //   live: "#",
+  //   github: "https://github.com/SanjuBhunia99/Chatting-Application",
+  // },
+
   {
     title: "QR_Code",
     desc: "QR code generator using HTML, CSS and JavaScript.",
     tech: ["HTML", "CSS", "JavaScript"],
     image: qrcode,
     live: "#",
-    github: "https://github.com/SanjuBhunia99/QR-Code-Generator",
+    github: "https://github.com/SanjuBhunia99/QR_COde.git",
   },
 
   {
