@@ -55,10 +55,10 @@ const projects = [
   // },
 
   // {
-  //   title: "Chat Application",
-  //   desc: "Real-time chat app using Socket.io.",
+  //   title: "Quiz_Platfrom",
+  //   desc: "Quiz Platfrom built using React and ",
   //   tech: ["React", "Node", "Socket.io", "MongoDB", "Express"],
-  //   image: "chatapplication",
+  //   image: "quizplatfrom",
   //   live: "#",
   //   github: "https://github.com/SanjuBhunia99/KodNest_Quiz_Platfrom.git",
   // },
