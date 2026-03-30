@@ -5,6 +5,7 @@ import ecommerce from "../../../assets/images/project/Cartify.png";
 import proTask from "../../../assets/images/project/ProTask.jpg";
 import clock from "../../../assets/images/project/Clock.png";
 import loginsignup from "../../../assets/images/project/LoginSignup.png";
+import qrcode from "../../../assets/images/project/QR_Code.jpg";
 import stopwatch from "../../../assets/images/project/Watch.png";
 
 // import chatApp from "../../../assets/images/project/chat.jpg";
@@ -53,14 +54,14 @@ const projects = [
   //   github: "https://github.com/SanjuBhunia99/Chatting-Application",
   // },
 
-  // {
-  //   title: "Calculator",
-  //   desc: "Calculator using HTML, CSS and JavaScript.",
-  //   tech: ["HTML", "CSS", "JavaScript"],
-  //   image: "calculator",
-  //   live: "#",
-  //   github: "https://github.com/SanjuBhunia99/Calculator",
-  // },
+  {
+    title: "QR_Code",
+    desc: "QR code generator using HTML, CSS and JavaScript.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    image: qrcode,
+    live: "#",
+    github: "https://github.com/SanjuBhunia99/QR-Code-Generator",
+  },
 
   {
     title: "Login-Signup Page",

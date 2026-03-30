@@ -3,6 +3,9 @@ import cert1 from "../../../assets/images/certificate/Certificate.webp";
 import cert2 from "../../../assets/images/certificate/img19-5.jpg";
 import cert10 from "../../../assets/images/certificate/img23.jpg";
 import cert3 from "../../../assets/images/certificate/img19-2.jpg";
+import cert12 from "../../../assets/images/certificate/frontend_developer_react certificate_pages-to-jpg-0001.jpg";
+import cert13 from "../../../assets/images/certificate/python_basic certificate_page-0001.jpg";
+import cert14 from "../../../assets/images/certificate/software_engineer certificate_page-0001.jpg";
 import cert4 from "../../../assets/images/certificate/img19-1.jpg";
 import cert5 from "../../../assets/images/certificate/img19-4.jpg";
 import cert6 from "../../../assets/images/certificate/img19.jpg";
@@ -31,6 +34,9 @@ const certificates = [
   cert2,
   cert10,
   cert11,
+  cert12,
+  cert13,
+  cert14,
   cert3,
   cert4,
   cert5,
