@@ -34,7 +34,7 @@ const projects = [
     desc: "MERN stack ProTask with Todo App.",
     tech: ["MongoDB", "Express", "React", "Node"],
     image: proTask,
-    live: "https://protask-nine.vercel.app/",
+    live: "https://protask-frontend.vercel.app/",
     github: "https://github.com/SanjuBhunia99/ProTask.git",
   },
   {
