@@ -3,6 +3,10 @@ import { motion } from "framer-motion";
 import bookStore from "../../../assets/images/project/Book Store.jpg";
 import ecommerce from "../../../assets/images/project/Cartify.png";
 import proTask from "../../../assets/images/project/ProTask.jpg";
+import birthday from "../../../assets/images/project/Birthday.jpg";
+import ai_assistant from "../../../assets/images/project/Ai_Assistant.jpg";
+import weather from "../../../assets/images/project/weather.jpg";
+import image_editor from "../../../assets/images/project/image_editor.jpg";
 import clock from "../../../assets/images/project/Clock.png";
 import loginsignup from "../../../assets/images/project/LoginSignup.png";
 import qrcode from "../../../assets/images/project/QR_Code.jpg";
@@ -15,15 +19,15 @@ import stopwatch from "../../../assets/images/project/Watch.png";
 const projects = [
   {
     title: "Book Store App",
-    desc: "MERN stack book store with admin dashboard.",
+    desc: "BookStore is an online book shopping web application that allows users to explore, search, and manage books through a clean and interactive interface.",
     tech: ["MongoDB", "Express", "React", "Node"],
     image: bookStore,
     live: "https://book-store-two-rust.vercel.app",
     github: "https://github.com/SanjuBhunia99/Book-Store.git",
   },
   {
-    title: "Cartify",
-    desc: "E-commerce platform frontend.",
+    title: "Ecommerce",
+    desc: "E-Commerce Website is a modern online shopping platform where users can browse products, add items to the cart, and place orders through an interactive user interface.",
     tech: ["JavaScript", "React", "HTML5", "CSS3"],
     image: ecommerce,
     live: "https://soft-cranachan-7d8331.netlify.app/",
@@ -31,15 +35,47 @@ const projects = [
   },
   {
     title: "ProTask",
-    desc: "MERN stack ProTask with Todo App.",
+    desc: "TaskFlow is a modern task management web application that helps users organize, track, and manage daily tasks efficiently.",
     tech: ["MongoDB", "Express", "React", "Node"],
     image: proTask,
     live: "https://protask-frontend.vercel.app/",
     github: "https://github.com/SanjuBhunia99/ProTask.git",
   },
   {
+    title: "Birthday Card",
+    desc: "Birthday Wish Web App is a creative and interactive website designed to celebrate birthdays with beautiful animations, and personalized messages.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    image: birthday,
+    live: "https://wishbirthday1205.netlify.app/",
+    github: "https://github.com/sanjubhunia99/Birthday-Card",
+  },
+  {
+    title: "Ai_Assistant",
+    desc: "AI Assistant is a smart web application that interacts with users and responds to questions using Artificial Intelligence concepts and APIs.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    image: ai_assistant,
+    live: "https://aisriparna.netlify.app/",
+    github: "https://github.com/sanjubhunia99/AI_Assistant",
+  },
+  {
+    title: "Weather",
+    desc: "Live Weather Application that shows real-time weather information using the user’s current location.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    image: weather,
+    live: "https://weather1205.netlify.app/",
+    github: "https://github.com/sanjubhunia99/Weather_App",
+  },
+  {
+    title: "Image Editor",
+    desc: "Image Editor is a web-based application that allows users to edit images directly in the browser using JavaScript.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    image: image_editor,
+    live: "https://imageeditorsb.netlify.app/",
+    github: "https://github.com/sanjubhunia99/Image-Editor",
+  },
+  {
     title: "Analog Clock",
-    desc: "Analog clock built using JavaScript.",
+    desc: "Analog Clock is a real-time clock web application that displays the current time using rotating hour, minute, and second hands just like a traditional wall clock.",
     tech: ["HTML", "CSS", "JavaScript"],
     image: clock,
     live: "https://694fe8a894af8a00088e2c43--elegant-shortbread-d7f95d.netlify.app/",
@@ -72,18 +108,9 @@ const projects = [
   //   github: "https://github.com/SanjuBhunia99/Chatting-Application",
   // },
 
-  // {
-  //   title: "Chat Application",
-  //   desc: "Real-time chat app using Socket.io.",
-  //   tech: ["React", "Node", "Socket.io", "MongoDB", "Express"],
-  //   image: "chatapplication",
-  //   live: "#",
-  //   github: "https://github.com/SanjuBhunia99/Chatting-Application",
-  // },
-
   {
     title: "QR_Code",
-    desc: "QR code generator using HTML, CSS and JavaScript.",
+    desc: "QR Code Generator is a web application that allows users to generate QR codes instantly from text, links, or any custom input.",
     tech: ["HTML", "CSS", "JavaScript"],
     image: qrcode,
     live: "#",
@@ -92,7 +119,7 @@ const projects = [
 
   {
     title: "Login-Signup Page",
-    desc: "Login and SignUp built using JavaScript.",
+    desc: "Login and Signup Form is a secure and responsive authentication interface that allows users to create accounts and log in to the application.",
     tech: ["HTML", "CSS", "JavaScript"],
     image: loginsignup,
     live: "https://jovial-flan-df896a.netlify.app/",
@@ -100,7 +127,7 @@ const projects = [
   },
   {
     title: "StopWatch",
-    desc: "Stopwatch application using JavaScript.",
+    desc: "Stopwatch is a real-time web application used to measure and track elapsed time with start, stop, and reset functionality.",
     tech: ["HTML", "CSS", "JavaScript"],
     image: stopwatch,
     live: "https://stop-watchn.netlify.app/",
