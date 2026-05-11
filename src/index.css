@@ -6,7 +6,11 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  background: radial-gradient(circle, #9b8cff, #6b4bd9, #140a2e);
+
+  /* background: radial-gradient(circle, #5142af, #5a3ac2, #140a2e);
+   */
+  background: radial-gradient(circle, #1c1944, #131d35, #070f30);
+
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
