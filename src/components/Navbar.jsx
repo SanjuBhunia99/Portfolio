@@ -122,6 +122,7 @@ const Navbar = () => {
           <img
             src={Logo}
             alt="Logo"
+            
             onClick={() => {
               scrollToSection("about");
               setActive("about");
