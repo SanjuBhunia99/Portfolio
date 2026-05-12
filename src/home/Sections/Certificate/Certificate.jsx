@@ -54,8 +54,8 @@ const Certificate = () => {
   const visibleCertificates = showAll ? certificates : certificates.slice(0, 4);
 
   return (
-    <section id="certificate" className="scroll-mt-20 px-4 py-10 text-white">
-      <h2 className="mb-8 text-center text-2xl font-semibold underline sm:text-3xl">
+    <section id="certificate" className="scroll-mt-20 px-2 py-2 text-white">
+      <h2 className="mb-10 text-center text-2xl font-semibold underline sm:text-3xl">
         🎓 Certificates
       </h2>
 
