@@ -1,130 +1,151 @@
-@import "tailwindcss";
-@plugin "daisyui";
-@import "mouse-follower/dist/mouse-follower.min.css";
+ @import "tailwindcss";
+ @plugin "daisyui";
+ @import "mouse-follower/dist/mouse-follower.min.css";
 
-body {
-  margin: 0;
-  min-height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+ html {
+   scroll-behavior: smooth;
+   scrollbar-width: thin;
+   scrollbar-color: rgba(143, 128, 241, 0.45) transparent;
+ }
 
-  /* background: radial-gradient(circle, #5142af, #5a3ac2, #140a2e);
-   */
-  background: radial-gradient(circle, #1c1944, #131d35, #070f30);
+ html::-webkit-scrollbar,
+ body::-webkit-scrollbar {
+   width: 6px;
+ }
 
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-}
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background-image:
-    radial-gradient(2px 2px at 20px 30px, #ffffff, transparent),
-    radial-gradient(2px 2px at 40px 70px, #9b8cff, transparent),
-    radial-gradient(2px 2px at 50px 160px, #79d2ff, transparent),
-    radial-gradient(2px 2px at 90px 40px, #ffffff, transparent),
-    radial-gradient(2px 2px at 130px 80px, #9b8cff, transparent);
+ html::-webkit-scrollbar-track,
+ body::-webkit-scrollbar-track {
+   background: transparent;
+ }
 
-  background-repeat: repeat;
-  background-size: 200px 200px;
+ html::-webkit-scrollbar-thumb,
+ body::-webkit-scrollbar-thumb {
+   background: rgba(186, 175, 255, 0.45);
+   border-radius: 999px;
+ }
 
-  animation: starMove 90s linear infinite;
+ html::-webkit-scrollbar-thumb:hover,
+ body::-webkit-scrollbar-thumb:hover {
+   background: rgba(146, 210, 241, 0.65);
+ }
 
-  z-index: 0;
-  pointer-events: none;
-}
-@keyframes starMove {
-  from {
-    transform: translateY(0);
-  }
+ body {
+   margin: 0;
+   min-height: 100vh;
+   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+   background: radial-gradient(circle, #1c1944, #131d35, #070f30);
+   overflow-x: hidden;
+ }
 
-  to {
-    transform: translateY(-1000px);
-  }
-}
-.wave {
-  background: rgba(255, 255, 255 / 25%);
-  border-radius: 1000% 1000% 0 0;
-  position: fixed;
-  width: 200%;
-  height: 12em;
-  animation: waveMove 10s linear infinite;
-  bottom: 0;
-  left: 0;
-  opacity: 0.8;
-  z-index: -1;
-}
-.wave:nth-of-type(2) {
-  bottom: -1.25em;
-  animation: waveMove 18s linear reverse infinite;
-}
+ body::before {
+   content: "";
+   position: fixed;
+   inset: 0;
+   height: 100%;
+   background-image:
+     radial-gradient(2px 2px at 20px 30px, #ffffff, transparent),
+     radial-gradient(2px 2px at 40px 70px, #9b8cff, transparent),
+     radial-gradient(2px 2px at 50px 160px, #79d2ff, transparent),
+     radial-gradient(2px 2px at 90px 40px, #ffffff, transparent),
+     radial-gradient(2px 2px at 130px 80px, #9b8cff, transparent);
+   background-repeat: repeat;
+   background-size: 200px 200px;
+   animation: starMove 90s linear infinite;
+   z-index: 0;
+   pointer-events: none;
+ }
 
-.wave:nth-of-type(3) {
-  bottom: -2.5em;
-  animation: waveMove 20s linear reverse infinite;
-}
-@keyframes waveMove {
-  0% {
-    transform: translateX(1);
-  }
+ @keyframes starMove {
+   from {
+     transform: translateY(0);
+   }
 
-  25% {
-    transform: translateX(-25%);
-  }
+   to {
+     transform: translateY(-1000px);
+   }
+ }
 
-  50% {
-    transform: translateX(-50%);
-  }
+ .wave {
+   background: rgb(255 255 255 / 25%);
+   border-radius: 1000% 1000% 0 0;
+   position: fixed;
+   width: 200%;
+   height: 12em;
+   animation: waveMove 10s linear infinite;
+   bottom: 0;
+   left: 0;
+   opacity: 0.8;
+   z-index: -1;
+ }
 
-  75% {
-    transform: translateX(-25%);
-  }
+ .wave:nth-of-type(2) {
+   bottom: -1.25em;
+   animation: waveMove 18s linear reverse infinite;
+ }
 
-  100% {
-    transform: translateX(1);
-  }
-}
-.wave-hand {
-  display: inline-block;
-  transform-origin: 70% 70%;
-  animation: handWave 2s infinite;
-}
+ .wave:nth-of-type(3) {
+   bottom: -2.5em;
+   animation: waveMove 20s linear reverse infinite;
+ }
 
-@keyframes handWave {
-  0% {
-    transform: rotate(0deg);
-  }
+ @keyframes waveMove {
+   0% {
+     transform: translateX(1);
+   }
 
-  10% {
-    transform: rotate(14deg);
-  }
+   25% {
+     transform: translateX(-25%);
+   }
 
-  20% {
-    transform: rotate(-8deg);
-  }
+   50% {
+     transform: translateX(-50%);
+   }
 
-  30% {
-    transform: rotate(14deg);
-  }
+   75% {
+     transform: translateX(-25%);
+   }
 
-  40% {
-    transform: rotate(-4deg);
-  }
+   100% {
+     transform: translateX(1);
+   }
+ }
 
-  50% {
-    transform: rotate(10deg);
-  }
+ .wave-hand {
+   display: inline-block;
+   transform-origin: 70% 70%;
+   animation: handWave 2s infinite;
+ }
 
-  60% {
-    transform: rotate(0deg);
-  }
+ @keyframes handWave {
+   0% {
+     transform: rotate(0deg);
+   }
 
-  100% {
-    transform: rotate(0deg);
-  }
-}
+   10% {
+     transform: rotate(14deg);
+   }
 
+   20% {
+     transform: rotate(-8deg);
+   }
 
+   30% {
+     transform: rotate(14deg);
+   }
+
+   40% {
+     transform: rotate(-4deg);
+   }
+
+   50% {
+     transform: rotate(10deg);
+   }
+
+   60% {
+     transform: rotate(0deg);
+   }
+
+   100% {
+     transform: rotate(0deg);
+   }
+   }
