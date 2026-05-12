@@ -163,7 +163,6 @@ const Project = () => {
             >
               <img
                 src={p.image}
-                // alt={p.title}
                 className="h-56 w-full object-cover group-hover:scale-110 transition duration-500"
               />
 
@@ -184,7 +183,6 @@ const Project = () => {
                 <div className="flex gap-3">
                   <a
                     href={p.live}
-                    // href="book-store-two-rust.vercel.app"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-4 py-2 text-sm rounded-md bg-purple-600 hover:bg-purple-700 text-white transition cursor-pointer"

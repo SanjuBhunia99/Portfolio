@@ -13,21 +13,6 @@ import cert7 from "../../../assets/images/certificate/img20.jpg";
 import cert8 from "../../../assets/images/certificate/img21.jpg";
 import cert9 from "../../../assets/images/certificate/img22.jpg";
 import cert11 from "../../../assets/images/certificate/img24.jpg";
-const Page = ({ image }) => {
-  return (
-    <div className="relative transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02]">
-      <div className="relative bg-linear-to-b from-[#3a3a3a] border-2 rounded-[22px] p-0.5 shadow-[0_40px_90px_rgba(0,0,0,0.7)]">
-        <div className="relative rounded-2xl overflow-hidden">
-          <img
-            src={image}
-            alt="certificate"
-            className="w-140 h-87.5 object-cover"
-          />
-        </div>
-      </div>
-    </div>
-  );
-};
 
 const certificates = [
   cert1,
@@ -44,38 +29,53 @@ const certificates = [
   cert7,
   cert8,
   cert9,
-  
 ];
+
+const Page = ({ image }) => {
+  return (
+    <div className="w-full max-w-130 transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02] active:-translate-y-2 active:scale-[1.02]">
+      <div className="rounded-[22px] border border-white/15 bg-linear-to-b from-[#3a3a3a] to-[#111111] p-1 shadow-[0_24px_60px_rgba(0,0,0,0.55)] md:shadow-[0_40px_90px_rgba(0,0,0,0.7)]">
+        <div className="overflow-hidden rounded-2xl bg-black">
+          <img
+            src={image}
+            alt="certificate"
+            className="block w-full h-auto object-contain"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const Certificate = () => {
   const [showAll, setShowAll] = useState(false);
   const visibleCertificates = showAll ? certificates : certificates.slice(0, 4);
 
   return (
-    <div
-      id="certificate"
-      className="scroll-mt-20 text-2xl underline font-semibold text-white text-center mb-8"
-    >
-      🎓 Certificates
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-7 justify-items-center p-9">
+    <section id="certificate" className="scroll-mt-20 px-4 py-10 text-white">
+      <h2 className="mb-8 text-center text-2xl font-semibold underline sm:text-3xl">
+        🎓 Certificates
+      </h2>
+
+      <div className="mx-auto grid max-w-6xl grid-cols-1 justify-items-center gap-4 sm:grid-cols-2 md:gap-5">
         {visibleCertificates.map((img, index) => (
           <Page key={index} image={img} />
         ))}
       </div>
+
       {certificates.length > 4 && (
-        <div className="flex justify-center mt-16">
+        <div className="mt-10 flex justify-center md:mt-16">
           <button
             onClick={() => setShowAll(!showAll)}
-            className="px-8 py-3 text-sm tracking-widest uppercase rounded-full
-            bg-linear-to-r from-blue-400 to-cyan-500
-            text-white font-medium shadow-lg
-            hover:scale-105 transition-all duration-300"
+            className="rounded-full bg-linear-to-r from-blue-400 to-cyan-500 px-8 py-3 text-sm font-medium uppercase tracking-widest text-white shadow-lg transition-all duration-300 hover:scale-105 active:scale-105"
           >
             {showAll ? "View Less" : "View More"}
           </button>
         </div>
       )}
-    </div>
+    </section>
   );
 };
 
