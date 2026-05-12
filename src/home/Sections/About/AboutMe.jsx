@@ -28,11 +28,11 @@ const AboutMe = () => {
       </p>
 
       <div className="flex gap-5 mt-6">
-        <SocialIcon href="https://github.com/SanjuBhunia99">
+        <SocialIcon href="https://github.com/sanjubhunia99/">
           <FaGithub />
         </SocialIcon>
 
-        <SocialIcon href="https://www.linkedin.com/in/sanju-bhunia99/">
+        <SocialIcon href="https://www.linkedin.com/in/sanjubhunia99/">
           <FaLinkedin />
         </SocialIcon>
 
