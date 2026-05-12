@@ -24,36 +24,6 @@ const skillsData = [
     category: "",
   },
   {
-    name: "Python",
-    icon: FaPython,
-    color: "text-blue-500",
-    category: "",
-  },
-  {
-    name: "HTML5",
-    icon: SiHtml5,
-    color: "text-orange-500",
-    category: "design",
-  },
-  {
-    name: "CSS3",
-    icon: FaCss3Alt,
-    color: "text-blue-500",
-    category: "design",
-  },
-  {
-    name: "Tailwind CSS",
-    icon: RiTailwindCssFill,
-    color: "text-sky-400",
-    category: "design",
-  },
-  {
-    name: "Bootstrap",
-    icon: FaBootstrap,
-    color: "text-purple-500",
-    category: "design",
-  },
-  {
     name: "JavaScript",
     icon: SiJavascript,
     color: "text-yellow-400",
@@ -77,6 +47,37 @@ const skillsData = [
     color: "text-gray-300",
     category: "web",
   },
+  {
+    name: "Python",
+    icon: FaPython,
+    color: "text-blue-500",
+    category: "",
+  },
+  {
+    name: "HTML5",
+    icon: SiHtml5,
+    color: "text-orange-500",
+    category: "web",
+  },
+  {
+    name: "CSS3",
+    icon: FaCss3Alt,
+    color: "text-blue-500",
+    category: "design",
+  },
+  {
+    name: "Tailwind CSS",
+    icon: RiTailwindCssFill,
+    color: "text-sky-400",
+    category: "design",
+  },
+  {
+    name: "Bootstrap",
+    icon: FaBootstrap,
+    color: "text-purple-500",
+    category: "design",
+  },
+
   {
     name: "MongoDB",
     icon: SiMongodb,
