@@ -9,25 +9,25 @@ import {
   SiMysql,
 
 } from "react-icons/si";
-import { GrOracle } from "react-icons/gr";
 import { VscVscode } from "react-icons/vsc";
 import { DiEclipse } from "react-icons/di";
 import { FaBootstrap, FaDatabase, FaCss3Alt } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { FaJava , FaPython} from "react-icons/fa6";
+// import { FaJava , FaPython} from "react-icons/fa6";
 import { FaGitAlt, FaGithub } from "react-icons/fa";
 const skillsData = [
-  {
-    name: "Java",
-    icon: FaJava,
-    color: "text-yellow-400",
-    category: "",
-  },
+  // {
+  //   name: "Java",
+  //   icon: FaJava,
+  //   color: "text-yellow-400",
+  //   category: "",
+  // },
   {
     name: "JavaScript",
     icon: SiJavascript,
     color: "text-yellow-400",
     category: "web",
+    href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
     name: "React",
@@ -41,18 +41,19 @@ const skillsData = [
     color: "text-green-500",
     category: "web",
   },
+
   {
     name: "Express.js",
     icon: SiExpress,
     color: "text-gray-300",
     category: "web",
   },
-  {
-    name: "Python",
-    icon: FaPython,
-    color: "text-blue-500",
-    category: "",
-  },
+  // {
+  //   name: "Python",
+  //   icon: FaPython,
+  //   color: "text-blue-500",
+  //   category: "",
+  // },
   {
     name: "HTML5",
     icon: SiHtml5,
@@ -109,12 +110,6 @@ const skillsData = [
     category: "database",
   },
   {
-    name: "Oracle",
-    icon: GrOracle,
-    color: "text-red-500",
-    category: "database",
-  },
-  {
     name: "Visual Studio Code",
     icon: VscVscode,
     color: "text-blue-300",
@@ -168,7 +163,7 @@ const Skills = () => {
         {filterBtn("tools", "Tools", "🛠️")}
       </div>
       <div
-        className="max-w-3xl mx-auto max-h-82.5 overflow-y-auto pr-2"
+        className="max-w-3xl mx-auto max-h-82.5 overflow-y-auto pr-2 cursor-pointer"
         style={{
           scrollbarWidth: "none",
           msOverflowStyle: "none",
