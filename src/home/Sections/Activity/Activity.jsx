@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { GitHubCalendar } from "react-github-calendar";
 
-const USERNAME = "SanjuBhunia99";
+const USERNAME = "sanjubhunia99";
 
 const Activity = () => {
   const [refreshKey, setRefreshKey] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setRefreshKey((prev) => prev + 1);
-    }, 30 * 60 * 1000);
+    const interval = setInterval(
+      () => {
+        setRefreshKey((prev) => prev + 1);
+      },
+      30 * 60 * 1000,
+    );
 
     return () => clearInterval(interval);
   }, []);
@@ -22,6 +25,7 @@ const Activity = () => {
       <div className="text-xl sm:text-2xl underline font-semibold mb-6">
         🏃‍♂️ Activity
       </div>
+
       <div className="flex justify-center p-2">
         <div
           className="w-full max-w-full sm:max-w-xl md:max-w-2xl rounded-xl p-2 sm:p-3"
@@ -46,9 +50,10 @@ const Activity = () => {
           </a>
         </div>
       </div>
-      <div className="mt-6 overflow-x-auto">
-        <div className="flex justify-center">
-          <div className="rounded-xl px-4 py-4">
+
+      <div className="mt-6 w-full overflow-x-auto">
+        <div className="flex justify-start sm:justify-center">
+          <div className="min-w-max rounded-xl px-4 py-4">
             <GitHubCalendar
               key={refreshKey}
               username={USERNAME}
@@ -79,11 +84,12 @@ const Activity = () => {
                   block,
                   {
                     style: {
+                      ...block.props.style,
                       cursor: "pointer",
                     },
                     onClick: () => window.open(githubDayUrl, "_blank"),
                   },
-                  <title>{tooltipText}</title>
+                  <title>{tooltipText}</title>,
                 );
               }}
             />
