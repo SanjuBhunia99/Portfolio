@@ -13,6 +13,7 @@ import cert7 from "../../../assets/images/certificate/img20.jpg";
 import cert8 from "../../../assets/images/certificate/img21.jpg";
 import cert9 from "../../../assets/images/certificate/img22.jpg";
 import cert11 from "../../../assets/images/certificate/img24.jpg";
+import cert15 from "../../../assets/images/certificate/pwc.jpg";
 
 const certificates = [
   cert1,
@@ -29,6 +30,7 @@ const certificates = [
   cert7,
   cert8,
   cert9,
+  cert15,
 ];
 
 const Page = ({ image }) => {
