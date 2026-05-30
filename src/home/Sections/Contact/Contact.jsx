@@ -45,7 +45,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="scroll-mt-16 px-4 py-10 md:px-20">
+    <div id="contact" className="scroll-mt-16 px-4 py-6 md:px-20">
       <h1 className="text-2xl font-semibold underline text-white text-center mb-8">
         📸 Contact Me
       </h1>
@@ -93,7 +93,7 @@ const Contact = () => {
               className={`w-full py-3 rounded-full font-semibold transition ${
                 loading
                   ? "bg-gray-400 cursor-not-allowed"
-                  : "bg-[#5fe407e3] text-white hover:bg-gray-700"
+                  : "bg-[#c307fce7] text-white hover:bg-gray-700 cursor-pointer"
               }`}
             >
               {loading ? "Sending..." : "Send Message"}

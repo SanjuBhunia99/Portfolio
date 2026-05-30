@@ -20,7 +20,7 @@ const Activity = () => {
   return (
     <section
       id="activity"
-      className="scroll-mt-20 text-white text-center mb-10 px-3 sm:px-6"
+      className="scroll-mt-20 text-white text-center mb-10 px-3 sm:px-6 pt-2"
     >
       <div className="text-xl sm:text-2xl underline font-semibold mb-6">
         🏃‍♂️ Activity
