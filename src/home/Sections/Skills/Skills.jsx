@@ -9,25 +9,29 @@ import {
   SiMysql,
 
 } from "react-icons/si";
+
+import { BsTypescript } from "react-icons/bs";
+import { BiLogoPostgresql } from "react-icons/bi";
 import { VscVscode } from "react-icons/vsc";
 import { DiEclipse } from "react-icons/di";
 import { FaBootstrap, FaDatabase, FaCss3Alt } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-// import { FaJava , FaPython} from "react-icons/fa6";
+ import { FaJava, FaPython, FaAngular } from "react-icons/fa6";
 import { FaGitAlt, FaGithub } from "react-icons/fa";
 const skillsData = [
-  // {
-  //   name: "Java",
-  //   icon: FaJava,
-  //   color: "text-yellow-400",
-  //   category: "",
-  // },
+  {
+    name: "Java",
+    icon: FaJava,
+    color: "text-yellow-400",
+    category: "",
+  },
+
   {
     name: "JavaScript",
     icon: SiJavascript,
     color: "text-yellow-400",
     category: "web",
-    href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    
   },
   {
     name: "React",
@@ -41,19 +45,25 @@ const skillsData = [
     color: "text-green-500",
     category: "web",
   },
-
   {
     name: "Express.js",
     icon: SiExpress,
     color: "text-gray-300",
     category: "web",
   },
-  // {
-  //   name: "Python",
-  //   icon: FaPython,
-  //   color: "text-blue-500",
-  //   category: "",
-  // },
+  {
+    name: "TypeScript",
+    icon: BsTypescript,
+    color: "text-blue-500",
+    category: "web",
+  },
+
+  {
+    name: "Python",
+    icon: FaPython,
+    color: "text-blue-500",
+    category: "",
+  },
   {
     name: "HTML5",
     icon: SiHtml5,
@@ -73,6 +83,12 @@ const skillsData = [
     category: "design",
   },
   {
+    name: "Angular",
+    icon: FaAngular,
+    color: "text-red-500",
+    category: "web",
+  },
+  {
     name: "Bootstrap",
     icon: FaBootstrap,
     color: "text-purple-500",
@@ -83,6 +99,24 @@ const skillsData = [
     name: "MongoDB",
     icon: SiMongodb,
     color: "text-green-400",
+    category: "database",
+  },
+  {
+    name: "PostgreSQL",
+    icon: BiLogoPostgresql,
+    color: "text-blue-400",
+    category: "database",
+  },
+  {
+    name: "SQL",
+    icon: FaDatabase,
+    color: "text-blue-300",
+    category: "database",
+  },
+  {
+    name: "MySQL",
+    icon: SiMysql,
+    color: "text-blue-300",
     category: "database",
   },
   {
@@ -97,18 +131,7 @@ const skillsData = [
     color: "text-white-400",
     category: "",
   },
-  {
-    name: "SQL",
-    icon: FaDatabase,
-    color: "text-blue-300",
-    category: "database",
-  },
-  {
-    name: "MySQL",
-    icon: SiMysql,
-    color: "text-blue-300",
-    category: "database",
-  },
+
   {
     name: "Visual Studio Code",
     icon: VscVscode,

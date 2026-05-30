@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Resume from "../../src/assets/images/resume/Resume.pdf";
+import Resume from "../../src/assets/images/resume/Resume3.pdf";
 import Logo from "../../public/jpg.jpg";
 import { FaArrowUp } from "react-icons/fa";
 
