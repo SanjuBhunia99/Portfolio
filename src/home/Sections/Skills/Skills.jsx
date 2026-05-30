@@ -10,7 +10,7 @@ import {
 
 } from "react-icons/si";
 
-import { BsTypescript } from "react-icons/bs";
+// import { BsTypescript } from "react-icons/bs";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { VscVscode } from "react-icons/vsc";
 import { DiEclipse } from "react-icons/di";
@@ -49,12 +49,6 @@ const skillsData = [
     name: "Express.js",
     icon: SiExpress,
     color: "text-gray-300",
-    category: "web",
-  },
-  {
-    name: "TypeScript",
-    icon: BsTypescript,
-    color: "text-blue-500",
     category: "web",
   },
 
