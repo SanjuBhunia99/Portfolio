@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
-import ProfileImg from "../../../assets/images/image/Sanju-Bhunia-5.jpg";
+import ProfileImg from "../../../assets/images/image/Sanju-Bhunia (1).jpeg";
 const AboutMe = () => {
   return (
     <section
