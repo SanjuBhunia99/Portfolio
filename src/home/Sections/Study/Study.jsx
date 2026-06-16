@@ -4,9 +4,9 @@ import Organization from "./Organization";
 const Study = () => {
   const data = [
     {
-      title: "KodNest",
-      role: "Java Full Stack Developer",
-      date: "03/11/2025 - Present",
+      title: "KodNest Technology",
+      role: "Full Stack Developer",
+      date: "03/11/2025 - 11/05/2026",
       side: "left",
     },
     {
