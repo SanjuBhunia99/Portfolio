@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import cert0 from "../../../assets/images/certificate/KODJ1RDY5-Sanju Bhunia_page-0001.jpg";
 import cert1 from "../../../assets/images/certificate/Certificate.webp";
 import cert2 from "../../../assets/images/certificate/img19-5.jpg";
 import cert10 from "../../../assets/images/certificate/img23.jpg";
@@ -16,6 +17,7 @@ import cert11 from "../../../assets/images/certificate/img24.jpg";
 import cert15 from "../../../assets/images/certificate/pwc.jpg";
 
 const certificates = [
+  cert0,
   cert1,
   cert2,
   cert10,
